@@ -1,0 +1,22 @@
+.footer{
+    background: #032727;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    .icon-sosmed{
+        width: 24px;
+        margin-right: 10px;
+    }
+    h6{
+        color: #FFE602;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    p{
+        color: #219897;
+    }
+    .pengembang{
+        @include media-breakpoint-down(md) { 
+            text-align: center;
+         }
+    }
+}

@@ -1,0 +1,13 @@
+// Import Bootstrap 4 Library
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+// global
+@import "global";
+
+@import "header/hero";
+@import "header/navbar";
+
+@import "item-service/card-service";
+
+@import "diskusi/diskusi";
+
+@import "footer/footer";

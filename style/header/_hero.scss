@@ -1,0 +1,47 @@
+.hero{
+    .jumbotron{
+        margin-bottom: 20px;
+        margin-top: -84px;
+        // height:  500px;
+        // background: linear-gradient(357.39deg, #85CFCB -69.92%, rgba(255, 255, 255, 0) 97.82%), #FFFFFF;
+        // background: linear-gradient(357.39deg, #85CFCB -69.92%, rgba(255, 255, 255, 0) 68.11%), #FFFFFF;
+        background: linear-gradient(0deg, #85CFCB -46.33%, rgba(255, 255, 255, 0) 50.33%), #FFFFFF
+    }
+    h2{
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 46px;
+
+        color: #075858;
+        span{
+            color: #F19901;;
+        }
+        @include media-breakpoint-down(md) { 
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 34px;
+         }
+    }
+    .btn-penggugat{
+        background: #075858;
+        box-shadow: 0px 1px 18px #219897;
+        border-radius: 20px;
+        color: #FFFFFF;
+        font-weight: 200;
+        padding: 4px 26px;
+        margin-right: 20px;
+        margin-top: 10px;
+        @include media-breakpoint-up(md) { 
+            margin-right: 40px;
+         }
+    }
+    .btn-terdakwa{
+        background: #F19901;
+        box-shadow: 0px 1px 18px #F19901;
+        border-radius: 20px;
+        color: #FFFFFF;
+        font-weight: 200;
+        padding: 4px 26px;
+        margin-top: 10px;
+    }
+}
