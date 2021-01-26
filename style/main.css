@@ -10851,8 +10851,8 @@ body {
 
 .hero .btn-penggugat {
   background: #075858;
-  -webkit-box-shadow: 0px 1px 18px #219897;
-          box-shadow: 0px 1px 18px #219897;
+  -webkit-box-shadow: 0px 1px 6px #219897;
+          box-shadow: 0px 1px 6px #219897;
   border-radius: 20px;
   color: #FFFFFF;
   font-weight: 200;
@@ -10869,8 +10869,8 @@ body {
 
 .hero .btn-terdakwa {
   background: #F19901;
-  -webkit-box-shadow: 0px 1px 18px #F19901;
-          box-shadow: 0px 1px 18px #F19901;
+  -webkit-box-shadow: 0px 1px 6px #F19901;
+          box-shadow: 0px 1px 6px #F19901;
   border-radius: 20px;
   color: #FFFFFF;
   font-weight: 200;
@@ -10897,8 +10897,8 @@ nav .nav-item .nav-link {
 
 .item-service a .card-service {
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding: 20px 30px;
   margin-right: 16px;
@@ -10940,7 +10940,6 @@ nav .nav-item .nav-link {
 
 .diskusi a .card-diskuis {
   background: #FFFFFF;
-  border: 1px solid #D5D3D3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
