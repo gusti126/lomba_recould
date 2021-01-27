@@ -10820,7 +10820,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #F0F0F0;
+  background: white;
 }
 
 .hero .jumbotron {
@@ -10923,6 +10923,10 @@ nav .nav-item .nav-link {
   font-weight: bold;
 }
 
+.item-service a .card-service h6:hover {
+  color: #F19901;
+}
+
 @media (max-width: 1199.98px) {
   .item-service a .card-service h6 {
     font-size: 14px;
@@ -10940,6 +10944,7 @@ nav .nav-item .nav-link {
 
 .diskusi a .card-diskuis {
   background: #FFFFFF;
+  border: 1px solid #D5D3D3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
@@ -10986,6 +10991,7 @@ nav .nav-item .nav-link {
 }
 
 .footer {
+  margin-top: 20px;
   background: #032727;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -11010,5 +11016,47 @@ nav .nav-item .nav-link {
   .footer .pengembang {
     text-align: center;
   }
+}
+
+.navbar-diskusi {
+  background: linear-gradient(135deg, #90F7EC 0%, #32CCBC 100%);
+}
+
+.navbar-diskusi .nav-item .nav-link {
+  color: white;
+}
+
+.breadcrumb {
+  background: white;
+  margin-top: 10px;
+}
+
+.breadcrumb a {
+  color: #159494 !important;
+  font-weight: bold;
+}
+
+.kategori-diskusi .btn-kategori-diskusi {
+  padding: 2px 20px;
+  font-size: 14px;
+  margin-right: 8px;
+  border: 2px solid #ffa200;
+  border-radius: 20px;
+  color: #ffa200;
+}
+
+.kategori-diskusi .btn-kategori-diskusi.active {
+  background: #FFB83F;
+  color: white;
+}
+
+.pertanyaan-baru h4 {
+  color: #075858;
+}
+
+.btn-pertanyaan {
+  background: #075858;
+  color: white;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */

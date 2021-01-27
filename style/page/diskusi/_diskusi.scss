@@ -1,0 +1,45 @@
+.navbar-diskusi{
+    
+    background: linear-gradient(135deg, #90F7EC 0%, #32CCBC 100%);
+    .nav-item{
+        .nav-link{
+            color: white;
+        }
+    }
+}
+.breadcrumb{
+//     background: linear-gradient(135deg, rgba(253, 110, 106, 0.65) 0%, rgba(255, 198, 0, 0.65) 100%);
+//     opacity: 0.87;
+    // border-radius: 20px;
+    background: white;
+    margin-top: 10px;
+    a{
+        color: #159494 !important;
+        font-weight: bold;
+    }
+    
+}
+.kategori-diskusi{
+    .btn-kategori-diskusi{
+        padding: 2px 20px;
+        font-size: 14px;
+        margin-right: 8px;
+        &.active{
+            background: #FFB83F;
+            color: white;
+        }
+        border: 2px solid #ffa200;
+        border-radius: 20px;
+        color: #ffa200;
+    }
+}
+.pertanyaan-baru{
+    h4{
+        color: #075858;
+    }
+}
+.btn-pertanyaan{
+    background:  #075858;
+    color: white;
+    margin-bottom: 10px;
+}

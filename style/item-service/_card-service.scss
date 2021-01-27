@@ -7,6 +7,7 @@
             border-radius: 20px;
             padding: 20px 30px;
             margin-right: 16px;
+            
             @include media-breakpoint-down(lg) { 
                 padding: 6px 10px;
                 margin-right: 10px;
@@ -17,6 +18,9 @@
                 height: 38px;
             }
             h6{
+                &:hover{
+                    color: #F19901 ;
+                }
                 font-size: 20px;
                 color: #075858;
                 margin-top: 6px;
