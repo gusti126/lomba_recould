@@ -11187,9 +11187,9 @@ nav .nav-item .nav-link {
   background: white;
 }
 
-@media (max-width: 991.98px) {
-  .main-analisis p {
-    font-size: 12px;
+@media (max-width: 1199.98px) {
+  .main-analisis .container {
+    padding: unset;
   }
 }
 
@@ -11231,7 +11231,7 @@ nav .nav-item .nav-link {
 
 @media (max-width: 991.98px) {
   .main-analisis .card .card-analisa p {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
