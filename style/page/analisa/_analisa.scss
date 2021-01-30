@@ -76,6 +76,9 @@
       padding: 10px;
       border-radius: 10px;
       margin-bottom: 10px;
+      &.active{
+        border: 2px solid #31AB00;
+      }
       p{
         margin: unset;
         @include media-breakpoint-down(md){
@@ -98,4 +101,10 @@
     border: unset;
     background: linear-gradient(135deg, #FFA8A8 0%, #FCFF00 100%);
   }
+}
+.icon-cheklist{
+  position: absolute;
+  width: 26px;
+  top: -10px;
+  left: 0;
 }
