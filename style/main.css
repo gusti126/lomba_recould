@@ -10860,8 +10860,17 @@ body {
   color: #ffffff !important;
 }
 
+.btn-next:hover {
+  color: #b8b7b7;
+  background: #226309;
+}
+
 .icon-next {
   width: 80px;
+}
+
+.progress-bar {
+  background: linear-gradient(135deg, #e9e003 0%, #3cd500 77.09%);
 }
 
 .hero .jumbotron {

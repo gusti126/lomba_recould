@@ -90,12 +90,12 @@
               <div class="col">
                 <div class="card p-4">
                   <div class="row">
-                    <div class="col d-flex justify-content-center">
+                    <!-- <div class="col d-flex justify-content-center">
                       <div class="item-dot active"></div>
                       <div class="item-dot"></div>
                       <div class="item-dot"></div>
                       <div class="item-dot"></div>
-                    </div>
+                    </div> -->
                     <div class="col-12">
                       <p style="font-weight: bold">
                         Pilih Sesuai Yang Anda Alami dan Rasakan
@@ -125,7 +125,20 @@
                       </a>
                     </div>
                     <div class="col-12 mt-3">
-                      <a href="gugat.html" class="btn btn-next">Lihat hasil</a>
+                      <a href="gugat.html" class="btn btn-next" @click="next"
+                        >{{teksButton}}</a
+                      >
+                    </div>
+                    <div class="col-12">
+                      <br />
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          :style="{ width: widthProgres + '%' }"
+                        ></div>
+                      </div>
+                      <br />
                     </div>
                     <!-- <div class="col-md-3 col-6">
                     <a href="">
@@ -195,6 +208,15 @@
           AOS.init();
         },
         data: {
+          Hasil: [
+            {
+              id: 1,
+              pasal:
+                "Bab XIII UU No. 8 Tahun 1981 tentang Hukum Acara Pidana (“KUHAP”) yang mengatur dari Pasal 98 hingga Pasal 101. Pasal 98 ayat (1) KUHAP",
+            },
+          ],
+          teksButton: "Berikutnya",
+          widthProgres: 10,
           mainCard: [
             {
               id: 0,
@@ -228,6 +250,14 @@
               this.mainCard[id].answare = false;
             }
             console.log("ini main card id", this.mainCard[id].answare);
+          },
+          next() {
+            this.widthProgres += 30;
+            if (this.widthProgres >= 100) {
+              this.teksButton = "Lihat Hasil";
+            }
+            console.log(this.widthProgres);
+            event.preventDefault();
           },
         },
       });

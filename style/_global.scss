@@ -31,7 +31,17 @@ body {
 .btn-next {
   background: #31ab00;
   color: #ffffff !important;
+  &:hover {
+    color: #b8b7b7;
+    background: #226309;
+  }
 }
 .icon-next {
   width: 80px;
+}
+.progress-bar {
+  // background: linear-gradient(135deg, #fff720 0%, #3cd500 100%);
+  // background: linear-gradient(135deg, #fff720 0%, #3cd500 77.09%);
+  background: linear-gradient(135deg, #e9e003 0%, #3cd500 77.09%);
+  // background: linear-gradient(135deg, #70f570 0%, #49c628 100%);
 }
