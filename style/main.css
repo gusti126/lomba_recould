@@ -10873,6 +10873,11 @@ body {
   background: linear-gradient(135deg, #e9e003 0%, #3cd500 77.09%);
 }
 
+a.btn-diskusi {
+  color: #075858;
+  font-size: 16px;
+}
+
 .hero .jumbotron {
   margin-bottom: 20px;
   margin-top: -84px;

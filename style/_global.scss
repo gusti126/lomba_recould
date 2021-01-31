@@ -45,3 +45,9 @@ body {
   background: linear-gradient(135deg, #e9e003 0%, #3cd500 77.09%);
   // background: linear-gradient(135deg, #70f570 0%, #49c628 100%);
 }
+a {
+  &.btn-diskusi {
+    color: #075858;
+    font-size: 16px;
+  }
+}

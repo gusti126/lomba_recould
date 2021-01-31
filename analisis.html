@@ -128,15 +128,22 @@
                         </div>
                       </a>
                     </div>
-                    <div
-                      class="col"
-                      v-for="h in Hasil"
-                      :key="h.id"
-                      v-show="Hasil[0].status"
-                    >
-                      <h6 style="font-weight: bold">{{h.pasal}}</h6>
-                      <p>{{h.bunyi}}</p>
-                    </div>
+                    <transition name="slide-fade" mode="out-in">
+                      <div
+                        class="col"
+                        v-for="h in Hasil"
+                        :key="h.id"
+                        v-show="Hasil[0].status"
+                      >
+                        <h6 style="font-weight: bold">{{h.pasal}}</h6>
+                        <p>{{h.bunyi}}</p>
+                        <a href="" class="btn btn-diskusi">
+                          Lihat Diskusi Pasal Ini
+                        </a>
+                        <hr />
+                      </div>
+                    </transition>
+
                     <div class="col-12 mt-3">
                       <a href="gugat.html" class="btn btn-next" @click="next"
                         >{{teksButton}}</a
@@ -274,9 +281,19 @@
             }
             if (this.widthProgres > 101) {
               this.Hasil[0].status = true;
-              console.log(this.Hasil[0].status);
+              console.log("Lebih dari 101 ", this.Hasil[0].status);
             }
-            console.log(this.widthProgres);
+            if (this.widthProgres > 110) {
+              this.Hasil[0].status = true;
+              this.teksButton = "Kembali";
+              console.log("Lebih dari 110", this.Hasil[0].status);
+            }
+            if (this.widthProgres > 159) {
+              this.Hasil[0].status = false;
+              console.log("Lebih dari 150", this.widthProgres);
+              this.teksButton = "Berikutnya";
+              this.widthProgres = 10;
+            }
             event.preventDefault();
           },
         },
