@@ -97,8 +97,11 @@
                       <div class="item-dot"></div>
                     </div> -->
                     <div class="col-12">
-                      <p style="font-weight: bold">
+                      <p style="font-weight: bold" v-show="!Hasil[0].status">
                         Pilih Sesuai Yang Anda Alami dan Rasakan
+                      </p>
+                      <p style="font-weight: bold" v-show="Hasil[0].status">
+                        Hasil Analisa Kasus
                       </p>
                     </div>
                   </div>
@@ -107,6 +110,7 @@
                       class="col-md-3 col-6"
                       v-for="(m, index) in mainCard"
                       :key="m.id"
+                      v-show="!Hasil[0].status"
                     >
                       <a href="" @click="answareChange(index)">
                         <div
@@ -123,6 +127,15 @@
                           </div>
                         </div>
                       </a>
+                    </div>
+                    <div
+                      class="col"
+                      v-for="h in Hasil"
+                      :key="h.id"
+                      v-show="Hasil[0].status"
+                    >
+                      <h4>{{h.pasal}}</h4>
+                      <p>{{h.bunyi}}</p>
                     </div>
                     <div class="col-12 mt-3">
                       <a href="gugat.html" class="btn btn-next" @click="next"
@@ -213,6 +226,9 @@
               id: 1,
               pasal:
                 "Bab XIII UU No. 8 Tahun 1981 tentang Hukum Acara Pidana (“KUHAP”) yang mengatur dari Pasal 98 hingga Pasal 101. Pasal 98 ayat (1) KUHAP",
+              bunyi:
+                "Jika suatu perbuatan yang menjadi dasar dakwaan di dalam suatu pemeriksaan perkara pidana oleh pengadilan negeri menimbulkan kerugian bagi orang lain, maka hakim ketua sidang atas permintaan orang tersebut",
+              status: false,
             },
           ],
           teksButton: "Berikutnya",
@@ -255,6 +271,10 @@
             this.widthProgres += 30;
             if (this.widthProgres >= 100) {
               this.teksButton = "Lihat Hasil";
+            }
+            if (this.widthProgres > 101) {
+              this.Hasil[0].status = true;
+              console.log(this.Hasil[0].status);
             }
             console.log(this.widthProgres);
             event.preventDefault();
