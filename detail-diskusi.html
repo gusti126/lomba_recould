@@ -9,7 +9,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>justify Diskusi</title>
+    <title>Detail Diskusi</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="style/main.css" rel="stylesheet" />
@@ -49,96 +49,74 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Detail Diskusi
+          </li>
         </ol>
       </nav>
-      <section class="kategori-diskusi">
-        <a href="" class="btn btn-kategori-diskusi active"> Pidana </a>
-        <a href="" class="btn btn-kategori-diskusi"> Perdata </a>
-        <a href="" class="btn btn-kategori-diskusi"> HTN </a>
-      </section>
     </div>
-
-    <section class="diskusi">
+    <section class="pertanyaan">
       <div class="container">
-        <div class="row">
-          <div class="col-12 mb-2">
-            <a href="detail-diskusi.html">
-              <div class="card-diskuis">
-                <h6>
-                  Saya pernah mengalami pelecehan dua tahun yang lalu apakah
-                  masih bisa di gugat
-                </h6>
-                <p>
-                  22 september 2020
-                  <span>2 Jawaban</span>
-                </p>
+        <div class="row justify-content-center">
+          <div class="col-md-8 my-3">
+            <div class="card-pertanyaan">
+              <p class="nama-answer">Gusti Maulana 22 September 2020</p>
+              <h6 class="my-4">
+                Saya pernah mengalami pelecehan dua tahun yang lalu apakah masih
+                bisa di gugat
+              </h6>
+              <div class="input-group">
+                <textarea
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="Berikan Jawaban ....."
+                ></textarea>
               </div>
-            </a>
+              <button class="btn btn-penggugat">Post Jawaban</button>
+            </div>
           </div>
-          <div class="col-12">
-            <a href="detail-diskusi.html">
-              <div class="card-diskuis">
-                <h6>
-                  Saya pernah mengalami pelecehan dua tahun yang lalu apakah
-                  masih bisa di gugat
-                </h6>
-                <p>
-                  22 september 2020
-                  <span>2 Jawaban</span>
-                </p>
+          <div class="col-md-8 my-3">
+            <div class="card-pertanyaan">
+              <h6>Jawaban</h6>
+              <hr />
+              <h6 class="mt-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+                dignissimos ex aspernatur quod laborum laboriosam incidunt ipsa
+                rerum praesentium? Voluptas repellat dolores officia iste
+                architecto, nisi sed provident fugit quo?
+              </h6>
+              <p class="my-2">2 Komentar</p>
+              <hr />
+              <div class="row justify-content-end">
+                <div class="col-10 border my-2 mr-3 p-2">
+                  <p style="color: black">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facere, sequi.
+                  </p>
+                </div>
+                <div class="col-10 border my-2 mr-3 p-2">
+                  <p style="color: black">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facere, sequi.
+                  </p>
+                </div>
               </div>
-            </a>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Komentar"
+                />
+                <button class="btn btn-warning btn-sm mx-3">Send</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="pertanyaan-baru">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h4>Buat Pertanyaan Baru</h4>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                class="form-control"
-              ></textarea>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="">Nama Depan</label>
-                  <input type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="">Nama Belakang</label>
-                  <input type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label for="">Email</label>
-                  <input type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-pertanyaan btn-block">
-                  Post Pertanyaan
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="diskusi-detail">
+      <div class="container"></div>
     </section>
 
     <section class="footer">
@@ -181,9 +159,9 @@
         </div>
       </div>
     </section>
+
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.slim.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

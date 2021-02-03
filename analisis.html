@@ -134,11 +134,138 @@
                         v-for="h in Hasil"
                         :key="h.id"
                         v-show="Hasil[0].status"
+                        data-aos="zoom-in"
                       >
+                        <!-- <template v-show="!loading">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            style="
+                              margin: auto;
+                              background: rgb(255, 255, 255);
+                              display: block;
+                              shape-rendering: auto;
+                            "
+                            width="200px"
+                            height="200px"
+                            viewBox="0 0 100 100"
+                            preserveAspectRatio="xMidYMid"
+                          >
+                            <circle cx="84" cy="50" r="10" fill="#e15b64">
+                              <animate
+                                attributeName="r"
+                                repeatCount="indefinite"
+                                dur="0.6578947368421053s"
+                                calcMode="spline"
+                                keyTimes="0;1"
+                                values="10;0"
+                                keySplines="0 0.5 0.5 1"
+                                begin="0s"
+                              ></animate>
+                              <animate
+                                attributeName="fill"
+                                repeatCount="indefinite"
+                                dur="2.6315789473684212s"
+                                calcMode="discrete"
+                                keyTimes="0;0.25;0.5;0.75;1"
+                                values="#e15b64;#abbd81;#f8b26a;#f47e60;#e15b64"
+                                begin="0s"
+                              ></animate>
+                            </circle>
+                            <circle cx="16" cy="50" r="10" fill="#e15b64">
+                              <animate
+                                attributeName="r"
+                                repeatCount="indefinite"
+                                dur="2.6315789473684212s"
+                                calcMode="spline"
+                                keyTimes="0;0.25;0.5;0.75;1"
+                                values="0;0;10;10;10"
+                                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                                begin="0s"
+                              ></animate>
+                              <animate
+                                attributeName="cx"
+                                repeatCount="indefinite"
+                                dur="2.6315789473684212s"
+                                calcMode="spline"
+                                keyTimes="0;0.25;0.5;0.75;1"
+                                values="16;16;16;50;84"
+                                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                                begin="0s"
+                              ></animate>
+                            </circle>
+                            <circle cx="50" cy="50" r="10" fill="#f47e60">
+                              <animate
+                                attributeName="r"
+                                repeatCount="indefinite"
+                                dur="2.6315789473684212s"
+                                calcMode="spline"
+                                keyTimes="0;0.25;0.5;0.75;1"
+                                values="0;0;10;10;10"
+                                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                                begin="-0.6578947368421053s"
+                              ></animate>
+                              <animate
+                                attributeName="cx"
+                                repeatCount="indefinite"
+                                dur="2.6315789473684212s"
+                                calcMode="spline"
+                                keyTimes="0;0.25;0.5;0.75;1"
+                                values="16;16;16;50;84"
+                                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                                begin="-0.6578947368421053s"
+                              ></animate>
+                            </circle>
+                            <circle cx="84" cy="50" r="10" fill="#f8b26a">
+                              <animate
+                                attributeName="r"
+                                repeatCount="indefinite"
+                                dur="2.6315789473684212s"
+                                calcMode="spline"
+                                keyTimes="0;0.25;0.5;0.75;1"
+                                values="0;0;10;10;10"
+                                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                                begin="-1.3157894736842106s"
+                              ></animate>
+                              <animate
+                                attributeName="cx"
+                                repeatCount="indefinite"
+                                dur="2.6315789473684212s"
+                                calcMode="spline"
+                                keyTimes="0;0.25;0.5;0.75;1"
+                                values="16;16;16;50;84"
+                                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                                begin="-1.3157894736842106s"
+                              ></animate>
+                            </circle>
+                            <circle cx="16" cy="50" r="10" fill="#abbd81">
+                              <animate
+                                attributeName="r"
+                                repeatCount="indefinite"
+                                dur="2.6315789473684212s"
+                                calcMode="spline"
+                                keyTimes="0;0.25;0.5;0.75;1"
+                                values="0;0;10;10;10"
+                                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                                begin="-1.9736842105263157s"
+                              ></animate>
+                              <animate
+                                attributeName="cx"
+                                repeatCount="indefinite"
+                                dur="2.6315789473684212s"
+                                calcMode="spline"
+                                keyTimes="0;0.25;0.5;0.75;1"
+                                values="16;16;16;50;84"
+                                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                                begin="-1.9736842105263157s"
+                              ></animate>
+                            </circle>
+                          </svg>
+                        </template> -->
                         <h6 style="font-weight: bold">{{h.pasal}}</h6>
                         <p>{{h.bunyi}}</p>
                         <a href="" class="btn btn-diskusi">
-                          Lihat Diskusi Pasal Ini
+                          Diskusi Pasal Ini
                         </a>
                         <hr />
                       </div>
@@ -225,6 +352,9 @@
       var analisa = new Vue({
         el: "#app",
         mounted() {
+          window.addEventListener("load", (event) => {
+            console.log(event.isTrusted);
+          });
           AOS.init();
         },
         data: {
@@ -262,6 +392,7 @@
               answare: false,
             },
           ],
+          loading: true,
         },
         methods: {
           answareChange(id) {
@@ -278,11 +409,15 @@
             this.widthProgres += 30;
             if (this.widthProgres >= 100) {
               this.teksButton = "Lihat Hasil";
+              // setTimeout("alert('Belajar Timer JavaScript!')", 5000);
             }
-            if (this.widthProgres > 101) {
-              this.Hasil[0].status = true;
-              console.log("Lebih dari 101 ", this.Hasil[0].status);
-            }
+            // if (this.widthProgres > 101) {
+            //   // this.Hasil[0].status = true;
+            //   // setTimeout(function () {
+            //   //   this.loading = false;
+            //   // }, 1000);
+            //   console.log("Lebih dari 101 ", this.Hasil[0].status);
+            // }
             if (this.widthProgres > 110) {
               this.Hasil[0].status = true;
               this.teksButton = "Kembali";

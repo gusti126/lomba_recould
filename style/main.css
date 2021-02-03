@@ -10874,7 +10874,7 @@ body {
 }
 
 a.btn-diskusi {
-  color: #075858;
+  color: #075858 !important;
   font-size: 16px;
 }
 
@@ -10961,8 +10961,8 @@ nav .nav-item .nav-link {
 }
 
 .about {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(143.42%, #92FFC0)), #FFFFFF;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #92FFC0 143.42%), #FFFFFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(143.42%, #92ffc0)), #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #92ffc0 143.42%), #ffffff;
   padding: 50px 0px;
 }
 
@@ -11040,11 +11040,11 @@ nav .nav-item .nav-link {
 }
 
 .diskusi a .card-diskuis {
-  background: #FFFFFF;
-  border: 1px solid #D5D3D3;
+  background: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 10px;
+  border: 2px solid #ebf2f7;
+  border-radius: 8px;
   padding: 16px;
 }
 
@@ -11065,7 +11065,7 @@ nav .nav-item .nav-link {
 }
 
 .diskusi a p {
-  color: #65635F;
+  color: #65635f;
   font-weight: 400;
   font-size: 12px;
   margin: unset;
@@ -11077,9 +11077,9 @@ nav .nav-item .nav-link {
   margin-left: 10px;
 }
 
-.diskusi .btn-diskusi {
-  background: -webkit-gradient(linear, right top, left top, color-stop(-72.73%, #F19901), color-stop(93.09%, rgba(255, 255, 255, 0))), #075858;
-  background: linear-gradient(270deg, #F19901 -72.73%, rgba(255, 255, 255, 0) 93.09%), #075858;
+.diskusi .btn-diskusi-home {
+  background: -webkit-gradient(linear, right top, left top, color-stop(-72.73%, #f19901), color-stop(93.09%, rgba(255, 255, 255, 0))), #075858;
+  background: linear-gradient(270deg, #f19901 -72.73%, rgba(255, 255, 255, 0) 93.09%), #075858;
   border-radius: 20px;
   color: white;
   font-size: 16px;
@@ -11282,5 +11282,40 @@ nav .nav-item .nav-link {
   width: 26px;
   top: -10px;
   left: 0;
+}
+
+.card-pertanyaan {
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ebf2f7;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card-pertanyaan:hover {
+  -webkit-box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.25);
+}
+
+.card-pertanyaan h6 {
+  font-weight: bold;
+}
+
+.card-pertanyaan p {
+  color: #65635f;
+  font-weight: 400;
+  font-size: 12px;
+  margin: unset;
+}
+
+.card-pertanyaan p span {
+  font-weight: bold;
+  color: #075858;
+  margin-left: 10px;
+}
+
+.nama-answer {
+  font-size: 14px;
 }
 /*# sourceMappingURL=main.css.map */
